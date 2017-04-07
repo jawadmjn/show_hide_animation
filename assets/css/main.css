@@ -1,0 +1,79 @@
+/*
+
+####
+# Input Data.
+####
+
+# Colors - Primary
+$color-grey: 			   	rgb(151,151,151);
+$color-grey-dark:			rgb(55,55,55);
+$color-green:         		rgb(65,117,5);
+
+// # Typography
+// Font-Family:	OpenSans-Semi-Bold
+// Font-Family:	OpenSans-Semi-Light
+// Font-Size:	15px
+*/
+
+@font-face {
+  font-family: "OpenSans-Semi-Bold";
+  src: url("../fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+body {
+  background-color: #979797;
+}
+
+div, p, a {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.container  {
+  float: none;
+  margin: 7vh auto;
+  width: 30vw;
+  font-size: 3vmin;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #FFFFFF;
+  border: 1px solid #417505;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.show_hide {
+  font-family: "OpenSans-Semi-Bold";
+  background-color: #417505;
+  color: #FFFFFF;
+  line-height: 8vmin;
+  letter-spacing: 0.1vmin;
+  font-weight: bold;
+  width: 100%;
+  padding-left: 3%;
+  text-decoration: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDU2OCA1NjgiPgo8ZyBpZD0iaWNvbW9vbi1pZ25vcmUiPgo8L2c+CjxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU0NC41IDMxOS41bC0xNjAuNSAxNjAuNS0xNjAuNS0xNjAuNWgzMjF6Ij48L3BhdGg+Cjwvc3ZnPg==");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+
+.opened {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDU2OCA1NjgiPgo8ZyBpZD0iaWNvbW9vbi1pZ25vcmUiPgo8L2c+CjxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIyMy41IDQ0OC41bDE2MC41LTE2MC41IDE2MC41IDE2MC41aC0zMjF6Ij48L3BhdGg+Cjwvc3ZnPg==") !important;
+}
+
+.container p {
+  display: none;
+  font-family: "OpenSans-Light";
+  width: 93%;
+  padding: 3%;
+  left: -100%;
+}
